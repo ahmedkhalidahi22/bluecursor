@@ -48398,7 +48398,8 @@
                             console.log(e),
                             (A.next = 6),
                             fetch(
-                              "http://84.46.253.59:8083/api/DeviceDetails/" + e,
+                              "https://blue-cursor-backend.onrender.com/api/DeviceDetails/" +
+                                e,
                               {
                                 method: "DELETE",
                                 headers: {
@@ -48861,12 +48862,16 @@
             Qe = (0, i.Z)(me, 2),
             pe = Qe[0],
             Ee = Qe[1],
-            be = WA("http://84.46.253.59:8083/api/DeviceDetails/vehicleTypes"),
+            be = WA(
+              "https://blue-cursor-backend.onrender.com/api/DeviceDetails/vehicleTypes"
+            ),
             Ce = be.data,
             ve =
               (be.isLoading,
               be.error,
-              WA("http://84.46.253.59:8083/api/departments/type/2")),
+              WA(
+                "https://blue-cursor-backend.onrender.com/api/departments/type/2"
+              )),
             Fe = ve.data;
           ve.isLoading, ve.error;
           (0, A.useEffect)(
@@ -48984,7 +48989,7 @@
                             ),
                             (A.next = 32),
                             fetch(
-                              "http://84.46.253.59:8083/api/DeviceDetails",
+                              "https://blue-cursor-backend.onrender.com/api/DeviceDetails",
                               {
                                 method: "POST",
                                 body: t,
@@ -49126,7 +49131,7 @@
                             a.append("token", ee.token),
                             (A.next = 35),
                             fetch(
-                              "http://84.46.253.59:8083/api/DeviceDetails/".concat(
+                              "https://blue-cursor-backend.onrender.com/api/DeviceDetails/".concat(
                                 o
                               ),
                               {
@@ -49222,7 +49227,7 @@
                             return (
                               (e.next = 2),
                               fetch(
-                                "http://84.46.253.59:8083/api/departments/values/"
+                                "https://blue-cursor-backend.onrender.com/api/departments/values/"
                                   .concat("sector" === A ? "3" : "4", "/")
                                   .concat(re),
                                 {
@@ -49603,7 +49608,7 @@
                                                   " mx-auto mt-1  w-24  rounded-lg",
                                                 src:
                                                   "string" == typeof X
-                                                    ? "http://84.46.253.59:8083/uploads/".concat(
+                                                    ? "https://blue-cursor-backend.onrender.com/uploads/".concat(
                                                         X
                                                       )
                                                     : URL.createObjectURL(X),
@@ -49650,7 +49655,7 @@
                                                   " mx-auto mt-1  w-24  rounded-lg",
                                                 src:
                                                   "string" == typeof _
-                                                    ? "http://84.46.253.59:8083/uploads/".concat(
+                                                    ? "https://blue-cursor-backend.onrender.com/uploads/".concat(
                                                         _
                                                       )
                                                     : URL.createObjectURL(_),
@@ -49698,7 +49703,7 @@
                                                   " mx-auto mt-1  w-24  rounded-lg",
                                                 src:
                                                   "string" == typeof eA
-                                                    ? "http://84.46.253.59:8083/uploads/".concat(
+                                                    ? "https://blue-cursor-backend.onrender.com/uploads/".concat(
                                                         eA
                                                       )
                                                     : URL.createObjectURL(eA),
@@ -49745,7 +49750,7 @@
                                                   " mx-auto mt-1  w-24  rounded-lg",
                                                 src:
                                                   "string" == typeof aA
-                                                    ? "http://84.46.253.59:8083/uploads/".concat(
+                                                    ? "https://blue-cursor-backend.onrender.com/uploads/".concat(
                                                         aA
                                                       )
                                                     : URL.createObjectURL(aA),
@@ -50933,14 +50938,17 @@
                           return (
                             (n = localStorage.getItem("user")),
                             (t.next = 3),
-                            fetch("http://84.46.253.59:8083/api/users/logout", {
-                              method: "POST",
-                              headers: {
-                                "Content-Type": "application/json",
-                                "ngrok-skip-browser-warning": "69420",
-                              },
-                              body: n,
-                            })
+                            fetch(
+                              "https://blue-cursor-backend.onrender.com/api/users/logout",
+                              {
+                                method: "POST",
+                                headers: {
+                                  "Content-Type": "application/json",
+                                  "ngrok-skip-browser-warning": "69420",
+                                },
+                                body: n,
+                              }
+                            )
                           );
                         case 3:
                           t.sent &&
@@ -51019,10 +51027,10 @@
                             (e =
                               "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
                               K.parent_dept
-                                ? "http://84.46.253.59:8083/api/DeviceDetails/parent/".concat(
+                                ? "https://blue-cursor-backend.onrender.com/api/DeviceDetails/parent/".concat(
                                     K.department_id
                                   )
-                                : "http://84.46.253.59:8083/api/DeviceDetails/".concat(
+                                : "https://blue-cursor-backend.onrender.com/api/DeviceDetails/".concat(
                                     K.department_id
                                   )),
                             (A.next = 3),
@@ -51099,17 +51107,20 @@
                             P(!0),
                             (n = { title: E, vehicle: F, dueDate: k, note: U }),
                             (A.next = 10),
-                            fetch("http://84.46.253.59:8083/api/reminders/", {
-                              method: "POST",
-                              body: JSON.stringify(
-                                s(s({}, n), {}, { user: K })
-                              ),
-                              headers: {
-                                "Content-Type": "application/json",
-                                Authorization: "Bearer ".concat(K.token),
-                                "ngrok-skip-browser-warning": "69420",
-                              },
-                            })
+                            fetch(
+                              "https://blue-cursor-backend.onrender.com/api/reminders/",
+                              {
+                                method: "POST",
+                                body: JSON.stringify(
+                                  s(s({}, n), {}, { user: K })
+                                ),
+                                headers: {
+                                  "Content-Type": "application/json",
+                                  Authorization: "Bearer ".concat(K.token),
+                                  "ngrok-skip-browser-warning": "69420",
+                                },
+                              }
+                            )
                           );
                         case 10:
                           return (a = A.sent), (A.next = 13), a.json();
@@ -51178,7 +51189,7 @@
                             }),
                             (A.next = 10),
                             fetch(
-                              "http://84.46.253.59:8083/api/reminders/".concat(
+                              "https://blue-cursor-backend.onrender.com/api/reminders/".concat(
                                 o
                               ),
                               {
@@ -51613,10 +51624,10 @@
                               (e =
                                 "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
                                 X.parent_dept
-                                  ? "http://84.46.253.59:8083/api/reminders/overdue/parent/".concat(
+                                  ? "https://blue-cursor-backend.onrender.com/api/reminders/overdue/parent/".concat(
                                       X.department_id
                                     )
-                                  : "http://84.46.253.59:8083/api/reminders/overdue/".concat(
+                                  : "https://blue-cursor-backend.onrender.com/api/reminders/overdue/".concat(
                                       X.department_id
                                     )),
                               (A.next = 4),
@@ -51668,7 +51679,7 @@
                                       case 0:
                                         return (
                                           (t =
-                                            "http://84.46.253.59:8083/api/reminders/reminder/".concat(
+                                            "https://blue-cursor-backend.onrender.com/api/reminders/reminder/".concat(
                                               e
                                             )),
                                           (A.next = 3),
@@ -52744,21 +52755,25 @@
                         return (
                           console.log(e),
                           (A.next = 6),
-                          fetch("http://84.46.253.59:8083/api/reminders/" + e, {
-                            method: "DELETE",
-                            headers: {
-                              Authorization: "Bearer ".concat(Q.token),
-                              user: JSON.stringify({
-                                user_id: Q.user_id,
-                                username: Q.username,
-                                token: Q.token,
-                                department_id: Q.department_id,
-                                module: Q.module,
-                                role_no: Q.role_no,
-                              }),
-                              "ngrok-skip-browser-warning": "69420",
-                            },
-                          })
+                          fetch(
+                            "https://blue-cursor-backend.onrender.com/api/reminders/" +
+                              e,
+                            {
+                              method: "DELETE",
+                              headers: {
+                                Authorization: "Bearer ".concat(Q.token),
+                                user: JSON.stringify({
+                                  user_id: Q.user_id,
+                                  username: Q.username,
+                                  token: Q.token,
+                                  department_id: Q.department_id,
+                                  module: Q.module,
+                                  role_no: Q.role_no,
+                                }),
+                                "ngrok-skip-browser-warning": "69420",
+                              },
+                            }
+                          )
                         );
                       case 6:
                         return (n = A.sent), (A.next = 9), n.json();
@@ -53025,10 +53040,10 @@
                             (e =
                               "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
                               Q.parent_dept
-                                ? "http://84.46.253.59:8083/api/reminders/parent/".concat(
+                                ? "https://blue-cursor-backend.onrender.com/api/reminders/parent/".concat(
                                     Q.department_id
                                   )
-                                : "http://84.46.253.59:8083/api/reminders/".concat(
+                                : "https://blue-cursor-backend.onrender.com/api/reminders/".concat(
                                     Q.department_id
                                   )),
                             (A.next = 3),
@@ -53317,10 +53332,10 @@
                               (e =
                                 "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
                                 k.parent_dept
-                                  ? "http://84.46.253.59:8083/api/DeviceDetails/parent/".concat(
+                                  ? "https://blue-cursor-backend.onrender.com/api/DeviceDetails/parent/".concat(
                                       k.department_id
                                     )
-                                  : "http://84.46.253.59:8083/api/DeviceDetails/".concat(
+                                  : "https://blue-cursor-backend.onrender.com/api/DeviceDetails/".concat(
                                       k.department_id
                                     )),
                               (A.next = 5),
@@ -53670,7 +53685,7 @@
                             return (
                               (A.next = 2),
                               fetch(
-                                "http://84.46.253.59:8083/api/systemInfo/logos",
+                                "https://blue-cursor-backend.onrender.com/api/systemInfo/logos",
                                 {
                                   headers: {
                                     "ngrok-skip-browser-warning": "69420",
@@ -54508,7 +54523,7 @@
             g = h[0],
             d = h[1],
             f = HA().user,
-            w = WA("http://84.46.253.59:8083/api/sectors/2"),
+            w = WA("https://blue-cursor-backend.onrender.com/api/sectors/2"),
             m = w.data,
             Q = (w.isLoading, w.error, (0, A.useState)(!1)),
             p = (0, i.Z)(Q, 2),
@@ -54655,7 +54670,7 @@
                   (0, CA.jsx)(rt, {
                     sectorId: a,
                     name: c,
-                    url: "http://84.46.253.59:8083/api/sectorVehicles",
+                    url: "https://blue-cursor-backend.onrender.com/api/sectorVehicles",
                     setIsSaved: d,
                   }),
                 (0, CA.jsx)(xe, {
@@ -54687,7 +54702,9 @@
             d = g[0],
             f = g[1],
             w = HA().user,
-            m = WA("http://84.46.253.59:8083/api/specializedDepts/2"),
+            m = WA(
+              "https://blue-cursor-backend.onrender.com/api/specializedDepts/2"
+            ),
             Q = m.data,
             p = (m.isLoading, m.error, (0, A.useState)(!1)),
             E = (0, i.Z)(p, 2),
@@ -54830,7 +54847,7 @@
                 (0, CA.jsx)(rt, {
                   sectorId: o,
                   name: u,
-                  url: "http://84.46.253.59:8083/api/specializedDeptVehicles",
+                  url: "https://blue-cursor-backend.onrender.com/api/specializedDeptVehicles",
                   setIsSaved: f,
                 }),
               b && (0, CA.jsx)(Te, { toggleReminderPage: v }),
@@ -54886,7 +54903,7 @@
                                 o(null),
                                 (A.next = 4),
                                 fetch(
-                                  "http://84.46.253.59:8083/api/users/login",
+                                  "https://blue-cursor-backend.onrender.com/api/users/login",
                                   {
                                     method: "POST",
                                     headers: {
@@ -54941,7 +54958,7 @@
                           return (
                             (A.next = 2),
                             fetch(
-                              "http://84.46.253.59:8083/api/systemInfo/logos",
+                              "https://blue-cursor-backend.onrender.com/api/systemInfo/logos",
                               {
                                 headers: {
                                   "ngrok-skip-browser-warning": "69420",
@@ -71790,59 +71807,65 @@
           "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
           h.parent_dept
             ? ((e =
-                "http://84.46.253.59:8083/api/sectorVehicles/all/parent/".concat(
+                "https://blue-cursor-backend.onrender.com/api/sectorVehicles/all/parent/".concat(
                   h.department_id
                 )),
               (t =
-                "http://84.46.253.59:8083/api/DeviceDetails/countAll/parent/".concat(
+                "https://blue-cursor-backend.onrender.com/api/DeviceDetails/countAll/parent/".concat(
                   h.department_id
                 )),
-              (n = "http://84.46.253.59:8083/api/specializedDepts/".concat(
-                h.department_id
-              )),
+              (n =
+                "https://blue-cursor-backend.onrender.com/api/specializedDepts/".concat(
+                  h.department_id
+                )),
               (r =
-                "http://84.46.253.59:8083/api/sectorVehicles/sum/parent/".concat(
+                "https://blue-cursor-backend.onrender.com/api/sectorVehicles/sum/parent/".concat(
                   h.department_id
                 )),
               (a =
-                "http://84.46.253.59:8083/api/DeviceDetails/vehiclesState/parent/".concat(
+                "https://blue-cursor-backend.onrender.com/api/DeviceDetails/vehiclesState/parent/".concat(
                   h.department_id
                 )),
               (o =
-                "http://84.46.253.59:8083/api/DeviceDetails/vehiclesGPS/parent/".concat(
+                "https://blue-cursor-backend.onrender.com/api/DeviceDetails/vehiclesGPS/parent/".concat(
                   h.department_id
                 )),
               (l =
-                "http://84.46.253.59:8083/api/DeviceDetails/VehiclesCount/parent/".concat(
+                "https://blue-cursor-backend.onrender.com/api/DeviceDetails/VehiclesCount/parent/".concat(
                   h.department_id
                 )))
-            : ((e = "http://84.46.253.59:8083/api/sectorVehicles/all/".concat(
-                h.department_id
-              )),
-              (t =
-                "http://84.46.253.59:8083/api/DeviceDetails/countAll/".concat(
+            : ((e =
+                "https://blue-cursor-backend.onrender.com/api/sectorVehicles/all/".concat(
                   h.department_id
                 )),
-              (n = "http://84.46.253.59:8083/api/specializedDepts/".concat(
-                h.department_id
-              )),
-              (r = "http://84.46.253.59:8083/api/sectorVehicles/sum/".concat(
-                h.department_id
-              )),
+              (t =
+                "https://blue-cursor-backend.onrender.com/api/DeviceDetails/countAll/".concat(
+                  h.department_id
+                )),
+              (n =
+                "https://blue-cursor-backend.onrender.com/api/specializedDepts/".concat(
+                  h.department_id
+                )),
+              (r =
+                "https://blue-cursor-backend.onrender.com/api/sectorVehicles/sum/".concat(
+                  h.department_id
+                )),
               (a =
-                "http://84.46.253.59:8083/api/DeviceDetails/vehiclesState/".concat(
+                "https://blue-cursor-backend.onrender.com/api/DeviceDetails/vehiclesState/".concat(
                   h.department_id
                 )),
               (o =
-                "http://84.46.253.59:8083/api/DeviceDetails/vehiclesGPS/".concat(
+                "https://blue-cursor-backend.onrender.com/api/DeviceDetails/vehiclesGPS/".concat(
                   h.department_id
                 )),
               (l =
-                "http://84.46.253.59:8083/api/DeviceDetails/VehiclesCount/".concat(
+                "https://blue-cursor-backend.onrender.com/api/DeviceDetails/VehiclesCount/".concat(
                   h.department_id
                 )));
           var g = WA(
-              "http://84.46.253.59:8083/api/sectors/".concat(h.department_id)
+              "https://blue-cursor-backend.onrender.com/api/sectors/".concat(
+                h.department_id
+              )
             ),
             d = g.data,
             f = g.isLoading,
@@ -71858,7 +71881,7 @@
             Y =
               (C.error,
               WA(
-                "http://84.46.253.59:8083/api/specializedDeptVehicles/sum/parent/".concat(
+                "https://blue-cursor-backend.onrender.com/api/specializedDeptVehicles/sum/parent/".concat(
                   h.department_id
                 )
               )),
@@ -74964,7 +74987,7 @@
                       (0, CA.jsx)("img", {
                         className: "rounded-lg",
                         alt: "",
-                        src: "http://84.46.253.59:8083/uploads/".concat(
+                        src: "https://blue-cursor-backend.onrender.com/uploads/".concat(
                           e.values.front_img
                         ),
                       }),
@@ -74989,7 +75012,7 @@
                       (0, CA.jsx)("img", {
                         className: "rounded-lg",
                         alt: "",
-                        src: "http://84.46.253.59:8083/uploads/".concat(
+                        src: "https://blue-cursor-backend.onrender.com/uploads/".concat(
                           e.values.back_img
                         ),
                       }),
@@ -75014,7 +75037,7 @@
                       (0, CA.jsx)("img", {
                         className: "rounded-lg",
                         alt: "",
-                        src: "http://84.46.253.59:8083/uploads/".concat(
+                        src: "https://blue-cursor-backend.onrender.com/uploads/".concat(
                           e.values.right_img
                         ),
                       }),
@@ -75039,7 +75062,7 @@
                       (0, CA.jsx)("img", {
                         className: "rounded-lg",
                         alt: "",
-                        src: "http://84.46.253.59:8083/uploads/".concat(
+                        src: "https://blue-cursor-backend.onrender.com/uploads/".concat(
                           e.values.left_img
                         ),
                       }),
@@ -75576,10 +75599,10 @@
                                 (e =
                                   "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
                                   l.parent_dept
-                                    ? "http://84.46.253.59:8083/api/DeviceDetails/vehicles/parent/".concat(
+                                    ? "https://blue-cursor-backend.onrender.com/api/DeviceDetails/vehicles/parent/".concat(
                                         l.department_id
                                       )
-                                    : "http://84.46.253.59:8083/api/DeviceDetails/vehicles/".concat(
+                                    : "https://blue-cursor-backend.onrender.com/api/DeviceDetails/vehicles/".concat(
                                         l.department_id
                                       )),
                                 (A.next = 5),
@@ -75628,10 +75651,10 @@
                                 (e =
                                   "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
                                   l.parent_dept
-                                    ? "http://84.46.253.59:8083/api/DeviceDetails/parent/".concat(
+                                    ? "https://blue-cursor-backend.onrender.com/api/DeviceDetails/parent/".concat(
                                         l.department_id
                                       )
-                                    : "http://84.46.253.59:8083/api/DeviceDetails/".concat(
+                                    : "https://blue-cursor-backend.onrender.com/api/DeviceDetails/".concat(
                                         l.department_id
                                       )),
                                 (A.next = 5),
@@ -75916,7 +75939,7 @@
                           return (
                             (A.next = 2),
                             fetch(
-                              "http://84.46.253.59:8083/api/systemInfo/logos",
+                              "https://blue-cursor-backend.onrender.com/api/systemInfo/logos",
                               {
                                 headers: {
                                   "ngrok-skip-browser-warning": "69420",
@@ -76152,7 +76175,9 @@
             fA = (0, i.Z)(dA, 2),
             wA = fA[0],
             mA = fA[1],
-            QA = WA("http://84.46.253.59:8083/api/departments/type/2"),
+            QA = WA(
+              "https://blue-cursor-backend.onrender.com/api/departments/type/2"
+            ),
             pA = QA.data;
           QA.isLoading, QA.error;
           pA && console.log(pA),
@@ -76204,15 +76229,18 @@
                               user: gA,
                             }),
                             (A.next = 10),
-                            fetch("http://84.46.253.59:8083/api/users/signup", {
-                              method: "POST",
-                              body: JSON.stringify(t),
-                              headers: {
-                                "Content-Type": "application/json",
-                                Authorization: "Bearer ".concat(gA.token),
-                                "ngrok-skip-browser-warning": "69420",
-                              },
-                            })
+                            fetch(
+                              "https://blue-cursor-backend.onrender.com/api/users/signup",
+                              {
+                                method: "POST",
+                                body: JSON.stringify(t),
+                                headers: {
+                                  "Content-Type": "application/json",
+                                  Authorization: "Bearer ".concat(gA.token),
+                                  "ngrok-skip-browser-warning": "69420",
+                                },
+                              }
+                            )
                           );
                         case 10:
                           return (a = A.sent), (A.next = 13), a.json();
@@ -76258,7 +76286,7 @@
                           return (
                             (A.next = 2),
                             fetch(
-                              "http://84.46.253.59:8083/api/departments/values/"
+                              "https://blue-cursor-backend.onrender.com/api/departments/values/"
                                 .concat("sector" === e ? "3" : "4", "/")
                                 .concat(t),
                               {
@@ -76300,7 +76328,7 @@
                             return (
                               (e.next = 2),
                               fetch(
-                                "http://84.46.253.59:8083/api/departments/values/"
+                                "https://blue-cursor-backend.onrender.com/api/departments/values/"
                                   .concat("sector" === A ? "3" : "4", "/")
                                   .concat(M),
                                 {
@@ -76447,7 +76475,7 @@
                                               return (
                                                 (e.next = 2),
                                                 fetch(
-                                                  "http://84.46.253.59:8083/api/users/roles/".concat(
+                                                  "https://blue-cursor-backend.onrender.com/api/users/roles/".concat(
                                                     A
                                                   ),
                                                   {
@@ -76895,10 +76923,10 @@
                               (e =
                                 "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
                                 E.parent_dept
-                                  ? "http://84.46.253.59:8083/api/users/all/parent/".concat(
+                                  ? "https://blue-cursor-backend.onrender.com/api/users/all/parent/".concat(
                                       E.department_id
                                     )
-                                  : "http://84.46.253.59:8083/api/users/all/".concat(
+                                  : "https://blue-cursor-backend.onrender.com/api/users/all/".concat(
                                       E.department_id
                                     )),
                               (A.next = 3),
@@ -77152,7 +77180,7 @@
                         return (
                           (A.next = 2),
                           fetch(
-                            "http://84.46.253.59:8083/api/departments/values/"
+                            "https://blue-cursor-backend.onrender.com/api/departments/values/"
                               .concat("sector" === e ? "3" : "4", "/")
                               .concat(M),
                             {
@@ -77191,7 +77219,9 @@
               },
               [m]
             );
-          var GA = WA("http://84.46.253.59:8083/api/departments/type/2"),
+          var GA = WA(
+              "https://blue-cursor-backend.onrender.com/api/departments/type/2"
+            ),
             UA = GA.data,
             RA =
               (GA.isLoading,
@@ -77210,7 +77240,7 @@
                           return (
                             (A.next = 2),
                             fetch(
-                              "http://84.46.253.59:8083/api/users/roles/".concat(
+                              "https://blue-cursor-backend.onrender.com/api/users/roles/".concat(
                                 e
                               ),
                               {
@@ -77289,15 +77319,18 @@
                                   user: NA,
                                 }),
                             (A.next = 15),
-                            fetch("http://84.46.253.59:8083/api/users/edit", {
-                              method: "PUT",
-                              body: JSON.stringify(a),
-                              headers: {
-                                "Content-Type": "application/json",
-                                Authorization: "Bearer ".concat(NA.token),
-                                "ngrok-skip-browser-warning": "69420",
-                              },
-                            })
+                            fetch(
+                              "https://blue-cursor-backend.onrender.com/api/users/edit",
+                              {
+                                method: "PUT",
+                                body: JSON.stringify(a),
+                                headers: {
+                                  "Content-Type": "application/json",
+                                  Authorization: "Bearer ".concat(NA.token),
+                                  "ngrok-skip-browser-warning": "69420",
+                                },
+                              }
+                            )
                           );
                         case 15:
                           return (i = A.sent), (A.next = 18), i.json();
@@ -77922,7 +77955,7 @@
                             }),
                             (A.next = 4),
                             fetch(
-                              "http://84.46.253.59:8083/api/users/delete/".concat(
+                              "https://blue-cursor-backend.onrender.com/api/users/delete/".concat(
                                 I
                               ),
                               {
@@ -78357,7 +78390,7 @@
                           return (
                             (A.next = 2),
                             fetch(
-                              "http://84.46.253.59:8083/api/systemInfo/logos",
+                              "https://blue-cursor-backend.onrender.com/api/systemInfo/logos",
                               {
                                 headers: {
                                   "ngrok-skip-browser-warning": "69420",
@@ -78418,7 +78451,7 @@
                           t.append("token", M.token),
                           (A.next = 14),
                           fetch(
-                            "http://84.46.253.59:8083/api/systemInfo/logos",
+                            "https://blue-cursor-backend.onrender.com/api/systemInfo/logos",
                             {
                               method: "PUT",
                               body: t,
@@ -78921,12 +78954,15 @@
                           case 0:
                             return (
                               (A.next = 2),
-                              fetch("http://84.46.253.59:8083/api/states/", {
-                                headers: {
-                                  Authorization: "Bearer ".concat(p.token),
-                                  "ngrok-skip-browser-warning": "69420",
-                                },
-                              })
+                              fetch(
+                                "https://blue-cursor-backend.onrender.com/api/states/",
+                                {
+                                  headers: {
+                                    Authorization: "Bearer ".concat(p.token),
+                                    "ngrok-skip-browser-warning": "69420",
+                                  },
+                                }
+                              )
                             );
                           case 2:
                             return (e = A.sent), (A.next = 5), e.json();
@@ -78978,15 +79014,18 @@
                           return (
                             Q(!0),
                             (A.next = 9),
-                            fetch("http://84.46.253.59:8083/api/states/", {
-                              method: "POST",
-                              body: JSON.stringify({ stateName: o, user: p }),
-                              headers: {
-                                "Content-Type": "application/json",
-                                Authorization: "Bearer ".concat(p.token),
-                                "ngrok-skip-browser-warning": "69420",
-                              },
-                            })
+                            fetch(
+                              "https://blue-cursor-backend.onrender.com/api/states/",
+                              {
+                                method: "POST",
+                                body: JSON.stringify({ stateName: o, user: p }),
+                                headers: {
+                                  "Content-Type": "application/json",
+                                  Authorization: "Bearer ".concat(p.token),
+                                  "ngrok-skip-browser-warning": "69420",
+                                },
+                              }
+                            )
                           );
                         case 9:
                           return (t = A.sent), (A.next = 12), t.json();
@@ -79048,7 +79087,9 @@
                             Q(!0),
                             (A.next = 9),
                             fetch(
-                              "http://84.46.253.59:8083/api/states/".concat(C),
+                              "https://blue-cursor-backend.onrender.com/api/states/".concat(
+                                C
+                              ),
                               {
                                 method: "PUT",
                                 body: JSON.stringify({ stateName: o, user: p }),
@@ -79120,22 +79161,26 @@
                             console.log(e),
                             B(""),
                             (A.next = 7),
-                            fetch("http://84.46.253.59:8083/api/states/" + e, {
-                              method: "DELETE",
-                              body: JSON.stringify({ user: p }),
-                              headers: {
-                                Authorization: "Bearer ".concat(p.token),
-                                user: JSON.stringify({
-                                  user_id: p.user_id,
-                                  username: p.username,
-                                  token: p.token,
-                                  department_id: p.department_id,
-                                  module: p.module,
-                                  role_no: p.role_no,
-                                }),
-                                "ngrok-skip-browser-warning": "69420",
-                              },
-                            })
+                            fetch(
+                              "https://blue-cursor-backend.onrender.com/api/states/" +
+                                e,
+                              {
+                                method: "DELETE",
+                                body: JSON.stringify({ user: p }),
+                                headers: {
+                                  Authorization: "Bearer ".concat(p.token),
+                                  user: JSON.stringify({
+                                    user_id: p.user_id,
+                                    username: p.username,
+                                    token: p.token,
+                                    department_id: p.department_id,
+                                    module: p.module,
+                                    role_no: p.role_no,
+                                  }),
+                                  "ngrok-skip-browser-warning": "69420",
+                                },
+                              }
+                            )
                           );
                         case 7:
                           return (t = A.sent), (A.next = 10), t.json();
@@ -79641,7 +79686,7 @@
             R = (0, i.Z)(U, 2),
             S = R[0],
             J = R[1],
-            j = WA("http://84.46.253.59:8083/api/states/"),
+            j = WA("https://blue-cursor-backend.onrender.com/api/states/"),
             P = j.data;
           j.isLoading, j.err;
           (0, A.useEffect)(
@@ -79656,12 +79701,15 @@
                           case 0:
                             return (
                               (A.next = 2),
-                              fetch("http://84.46.253.59:8083/api/sectors/", {
-                                headers: {
-                                  Authorization: "Bearer ".concat(D.token),
-                                  "ngrok-skip-browser-warning": "69420",
-                                },
-                              })
+                              fetch(
+                                "https://blue-cursor-backend.onrender.com/api/sectors/",
+                                {
+                                  headers: {
+                                    Authorization: "Bearer ".concat(D.token),
+                                    "ngrok-skip-browser-warning": "69420",
+                                  },
+                                }
+                              )
                             );
                           case 2:
                             return (e = A.sent), (A.next = 5), e.json();
@@ -79713,19 +79761,22 @@
                           return (
                             Q(!0),
                             (A.next = 9),
-                            fetch("http://84.46.253.59:8083/api/sectors/", {
-                              method: "POST",
-                              body: JSON.stringify({
-                                sectorName: o,
-                                stateNo: b,
-                                user: D,
-                              }),
-                              headers: {
-                                "Content-Type": "application/json",
-                                Authorization: "Bearer ".concat(D.token),
-                                "ngrok-skip-browser-warning": "69420",
-                              },
-                            })
+                            fetch(
+                              "https://blue-cursor-backend.onrender.com/api/sectors/",
+                              {
+                                method: "POST",
+                                body: JSON.stringify({
+                                  sectorName: o,
+                                  stateNo: b,
+                                  user: D,
+                                }),
+                                headers: {
+                                  "Content-Type": "application/json",
+                                  Authorization: "Bearer ".concat(D.token),
+                                  "ngrok-skip-browser-warning": "69420",
+                                },
+                              }
+                            )
                           );
                         case 9:
                           return (t = A.sent), (A.next = 12), t.json();
@@ -79788,7 +79839,9 @@
                             Q(!0),
                             (A.next = 9),
                             fetch(
-                              "http://84.46.253.59:8083/api/sectors/".concat(y),
+                              "https://blue-cursor-backend.onrender.com/api/sectors/".concat(
+                                y
+                              ),
                               {
                                 method: "PUT",
                                 body: JSON.stringify({
@@ -79865,21 +79918,25 @@
                             console.log(e),
                             B(""),
                             (A.next = 7),
-                            fetch("http://84.46.253.59:8083/api/sectors/" + e, {
-                              method: "DELETE",
-                              headers: {
-                                Authorization: "Bearer ".concat(D.token),
-                                user: JSON.stringify({
-                                  user_id: D.user_id,
-                                  username: D.username,
-                                  token: D.token,
-                                  department_id: D.department_id,
-                                  module: D.module,
-                                  role_no: D.role_no,
-                                }),
-                                "ngrok-skip-browser-warning": "69420",
-                              },
-                            })
+                            fetch(
+                              "https://blue-cursor-backend.onrender.com/api/sectors/" +
+                                e,
+                              {
+                                method: "DELETE",
+                                headers: {
+                                  Authorization: "Bearer ".concat(D.token),
+                                  user: JSON.stringify({
+                                    user_id: D.user_id,
+                                    username: D.username,
+                                    token: D.token,
+                                    department_id: D.department_id,
+                                    module: D.module,
+                                    role_no: D.role_no,
+                                  }),
+                                  "ngrok-skip-browser-warning": "69420",
+                                },
+                              }
+                            )
                           );
                         case 7:
                           return (t = A.sent), (A.next = 10), t.json();
@@ -80472,7 +80529,7 @@
             R = (0, i.Z)(U, 2),
             S = R[0],
             J = R[1],
-            j = WA("http://84.46.253.59:8083/api/states/"),
+            j = WA("https://blue-cursor-backend.onrender.com/api/states/"),
             P = j.data;
           j.isLoading, j.err;
           (0, A.useEffect)(
@@ -80488,7 +80545,7 @@
                             return (
                               (A.next = 2),
                               fetch(
-                                "http://84.46.253.59:8083/api/specializedDepts/",
+                                "https://blue-cursor-backend.onrender.com/api/specializedDepts/",
                                 {
                                   headers: {
                                     Authorization: "Bearer ".concat(D.token),
@@ -80554,7 +80611,7 @@
                             Q(!0),
                             (A.next = 9),
                             fetch(
-                              "http://84.46.253.59:8083/api/specializedDepts/",
+                              "https://blue-cursor-backend.onrender.com/api/specializedDepts/",
                               {
                                 method: "POST",
                                 body: JSON.stringify({
@@ -80631,7 +80688,7 @@
                             Q(!0),
                             (A.next = 9),
                             fetch(
-                              "http://84.46.253.59:8083/api/specializedDepts/".concat(
+                              "https://blue-cursor-backend.onrender.com/api/specializedDepts/".concat(
                                 y
                               ),
                               {
@@ -80711,7 +80768,7 @@
                             B(""),
                             (A.next = 7),
                             fetch(
-                              "http://84.46.253.59:8083/api/specializedDepts/" +
+                              "https://blue-cursor-backend.onrender.com/api/specializedDepts/" +
                                 e,
                               {
                                 method: "DELETE",
@@ -81156,7 +81213,11 @@
             m = (w[0], w[1], (0, A.useState)(null)),
             Q = (0, i.Z)(m, 2),
             p = (Q[0], Q[1], HA().user),
-            E = WA("http://84.46.253.59:8083/api/users/".concat(p.user_id)),
+            E = WA(
+              "https://blue-cursor-backend.onrender.com/api/users/".concat(
+                p.user_id
+              )
+            ),
             b = E.data,
             C = E.isLoading;
           E.err;
@@ -81386,7 +81447,7 @@
                             return (
                               (A.next = 2),
                               fetch(
-                                "http://84.46.253.59:8083/api/users/".concat(
+                                "https://blue-cursor-backend.onrender.com/api/users/".concat(
                                   xA.user_id
                                 ),
                                 {
@@ -81448,7 +81509,7 @@
                         return (
                           (A.next = 2),
                           fetch(
-                            "http://84.46.253.59:8083/api/departments/values/"
+                            "https://blue-cursor-backend.onrender.com/api/departments/values/"
                               .concat("sector" === e ? "3" : "4", "/")
                               .concat(M),
                             {
@@ -81487,7 +81548,9 @@
               },
               [m]
             );
-          var kA = WA("http://84.46.253.59:8083/api/departments/type/2"),
+          var kA = WA(
+              "https://blue-cursor-backend.onrender.com/api/departments/type/2"
+            ),
             yA = kA.data,
             NA =
               (kA.isLoading,
@@ -81508,7 +81571,7 @@
                             x(""),
                             (A.next = 4),
                             fetch(
-                              "http://84.46.253.59:8083/api/users/roles/".concat(
+                              "https://blue-cursor-backend.onrender.com/api/users/roles/".concat(
                                 e
                               ),
                               {
@@ -81587,15 +81650,18 @@
                                   user: xA,
                                 }),
                             (A.next = 15),
-                            fetch("http://84.46.253.59:8083/api/users/edit", {
-                              method: "PUT",
-                              body: JSON.stringify(a),
-                              headers: {
-                                "Content-Type": "application/json",
-                                Authorization: "Bearer ".concat(xA.token),
-                                "ngrok-skip-browser-warning": "69420",
-                              },
-                            })
+                            fetch(
+                              "https://blue-cursor-backend.onrender.com/api/users/edit",
+                              {
+                                method: "PUT",
+                                body: JSON.stringify(a),
+                                headers: {
+                                  "Content-Type": "application/json",
+                                  Authorization: "Bearer ".concat(xA.token),
+                                  "ngrok-skip-browser-warning": "69420",
+                                },
+                              }
+                            )
                           );
                         case 15:
                           return (i = A.sent), (A.next = 18), i.json();

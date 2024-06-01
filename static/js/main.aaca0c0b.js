@@ -48395,7 +48395,7 @@
                             console.log(e),
                             (A.next = 6),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/" +
+                              "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/" +
                                 e,
                               {
                                 method: "DELETE",
@@ -48790,14 +48790,14 @@
             pe = Qe[0],
             Ee = Qe[1],
             be = WA(
-              "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/vehicleTypes"
+              "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/vehicleTypes"
             ),
             Ce = be.data,
             ve =
               (be.isLoading,
               be.error,
               WA(
-                "https://4859-84-46-253-59.ngrok-free.app/api/departments/type/2"
+                "https://blue-cursor-backend-production.up.railway.app//api/departments/type/2"
               )),
             Fe = ve.data;
           ve.isLoading, ve.error;
@@ -48923,7 +48923,7 @@
                             ),
                             (A.next = 32),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails",
+                              "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails",
                               {
                                 method: "POST",
                                 body: t,
@@ -49065,7 +49065,7 @@
                             a.append("token", ee.token),
                             (A.next = 35),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/".concat(
+                              "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/".concat(
                                 o
                               ),
                               {
@@ -49161,7 +49161,7 @@
                             return (
                               (e.next = 2),
                               fetch(
-                                "https://4859-84-46-253-59.ngrok-free.app/api/departments/values/"
+                                "https://blue-cursor-backend-production.up.railway.app//api/departments/values/"
                                   .concat("sector" === A ? "3" : "4", "/")
                                   .concat(re),
                                 {
@@ -49541,7 +49541,7 @@
                                                   " mx-auto mt-1  w-24  rounded-lg",
                                                 src:
                                                   "string" == typeof X
-                                                    ? "https://4859-84-46-253-59.ngrok-free.app/uploads/".concat(
+                                                    ? "https://blue-cursor-backend-production.up.railway.app//uploads/".concat(
                                                         X
                                                       )
                                                     : URL.createObjectURL(X),
@@ -49588,7 +49588,7 @@
                                                   " mx-auto mt-1  w-24  rounded-lg",
                                                 src:
                                                   "string" == typeof _
-                                                    ? "https://4859-84-46-253-59.ngrok-free.app/uploads/".concat(
+                                                    ? "https://blue-cursor-backend-production.up.railway.app//uploads/".concat(
                                                         _
                                                       )
                                                     : URL.createObjectURL(_),
@@ -49636,7 +49636,7 @@
                                                   " mx-auto mt-1  w-24  rounded-lg",
                                                 src:
                                                   "string" == typeof eA
-                                                    ? "https://4859-84-46-253-59.ngrok-free.app/uploads/".concat(
+                                                    ? "https://blue-cursor-backend-production.up.railway.app//uploads/".concat(
                                                         eA
                                                       )
                                                     : URL.createObjectURL(eA),
@@ -49683,7 +49683,7 @@
                                                   " mx-auto mt-1  w-24  rounded-lg",
                                                 src:
                                                   "string" == typeof aA
-                                                    ? "https://4859-84-46-253-59.ngrok-free.app/uploads/".concat(
+                                                    ? "https://blue-cursor-backend-production.up.railway.app//uploads/".concat(
                                                         aA
                                                       )
                                                     : URL.createObjectURL(aA),
@@ -50875,7 +50875,7 @@
                             (n = localStorage.getItem("user")),
                             (t.next = 3),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/users/logout",
+                              "https://blue-cursor-backend-production.up.railway.app//api/users/logout",
                               {
                                 method: "POST",
                                 headers: {
@@ -50963,10 +50963,10 @@
                             (e =
                               "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
                               K.parent_dept
-                                ? "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/parent/".concat(
+                                ? "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/parent/".concat(
                                     K.department_id
                                   )
-                                : "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/".concat(
+                                : "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/".concat(
                                     K.department_id
                                   )),
                             (A.next = 3),
@@ -51044,7 +51044,7 @@
                             (n = { title: E, vehicle: F, dueDate: M, note: U }),
                             (A.next = 10),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/reminders/",
+                              "https://blue-cursor-backend-production.up.railway.app//api/reminders/",
                               {
                                 method: "POST",
                                 body: JSON.stringify(
@@ -51125,7 +51125,7 @@
                             }),
                             (A.next = 10),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/reminders/".concat(
+                              "https://blue-cursor-backend-production.up.railway.app//api/reminders/".concat(
                                 o
                               ),
                               {
@@ -51559,10 +51559,10 @@
                               (e =
                                 "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
                                 X.parent_dept
-                                  ? "https://4859-84-46-253-59.ngrok-free.app/api/reminders/overdue/parent/".concat(
+                                  ? "https://blue-cursor-backend-production.up.railway.app//api/reminders/overdue/parent/".concat(
                                       X.department_id
                                     )
-                                  : "https://4859-84-46-253-59.ngrok-free.app/api/reminders/overdue/".concat(
+                                  : "https://blue-cursor-backend-production.up.railway.app//api/reminders/overdue/".concat(
                                       X.department_id
                                     )),
                               (A.next = 4),
@@ -51614,7 +51614,7 @@
                                       case 0:
                                         return (
                                           (t =
-                                            "https://4859-84-46-253-59.ngrok-free.app/api/reminders/reminder/".concat(
+                                            "https://blue-cursor-backend-production.up.railway.app//api/reminders/reminder/".concat(
                                               e
                                             )),
                                           (A.next = 3),
@@ -52691,7 +52691,7 @@
                           console.log(e),
                           (A.next = 6),
                           fetch(
-                            "https://4859-84-46-253-59.ngrok-free.app/api/reminders/" +
+                            "https://blue-cursor-backend-production.up.railway.app//api/reminders/" +
                               e,
                             {
                               method: "DELETE",
@@ -52975,10 +52975,10 @@
                             (e =
                               "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
                               Q.parent_dept
-                                ? "https://4859-84-46-253-59.ngrok-free.app/api/reminders/parent/".concat(
+                                ? "https://blue-cursor-backend-production.up.railway.app//api/reminders/parent/".concat(
                                     Q.department_id
                                   )
-                                : "https://4859-84-46-253-59.ngrok-free.app/api/reminders/".concat(
+                                : "https://blue-cursor-backend-production.up.railway.app//api/reminders/".concat(
                                     Q.department_id
                                   )),
                             (A.next = 3),
@@ -53269,10 +53269,10 @@
                               (e =
                                 "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
                                 M.parent_dept
-                                  ? "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/parent/".concat(
+                                  ? "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/parent/".concat(
                                       M.department_id
                                     )
-                                  : "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/".concat(
+                                  : "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/".concat(
                                       M.department_id
                                     )),
                               (A.next = 5),
@@ -53626,7 +53626,7 @@
                             return (
                               (A.next = 2),
                               fetch(
-                                "https://4859-84-46-253-59.ngrok-free.app/api/systemInfo/logos",
+                                "https://blue-cursor-backend-production.up.railway.app//api/systemInfo/logos",
                                 {
                                   headers: {
                                     "ngrok-skip-browser-warning": "69420",
@@ -54483,10 +54483,10 @@
                               (e =
                                 "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
                                 b.parent_dept
-                                  ? "https://4859-84-46-253-59.ngrok-free.app/api/sectors/".concat(
+                                  ? "https://blue-cursor-backend-production.up.railway.app//api/sectors/".concat(
                                       b.department_id
                                     )
-                                  : "https://4859-84-46-253-59.ngrok-free.app/api/sectors/".concat(
+                                  : "https://blue-cursor-backend-production.up.railway.app//api/sectors/".concat(
                                       b.parent_dept_no
                                     )),
                               (A.next = 3),
@@ -54664,7 +54664,7 @@
                   (0, CA.jsx)(rt, {
                     sectorId: l,
                     name: B,
-                    url: "https://4859-84-46-253-59.ngrok-free.app/api/sectorVehicles",
+                    url: "https://blue-cursor-backend-production.up.railway.app//api/sectorVehicles",
                     setIsSaved: w,
                   }),
                 (0, CA.jsx)(De, {
@@ -54714,10 +54714,10 @@
                               (e =
                                 "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
                                 C.parent_dept
-                                  ? "https://4859-84-46-253-59.ngrok-free.app/api/specializedDepts/".concat(
+                                  ? "https://blue-cursor-backend-production.up.railway.app//api/specializedDepts/".concat(
                                       C.department_id
                                     )
-                                  : "https://4859-84-46-253-59.ngrok-free.app/api/specializedDepts/".concat(
+                                  : "https://blue-cursor-backend-production.up.railway.app//api/specializedDepts/".concat(
                                       C.parent_dept_no
                                     )),
                               (A.next = 3),
@@ -54891,7 +54891,7 @@
                 (0, CA.jsx)(rt, {
                   sectorId: s,
                   name: h,
-                  url: "https://4859-84-46-253-59.ngrok-free.app/api/specializedDeptVehicles",
+                  url: "https://blue-cursor-backend-production.up.railway.app//api/specializedDeptVehicles",
                   setIsSaved: m,
                 }),
               Y && (0, CA.jsx)(Te, { toggleReminderPage: x }),
@@ -54947,7 +54947,7 @@
                                 o(null),
                                 (A.next = 4),
                                 fetch(
-                                  "https://4859-84-46-253-59.ngrok-free.app/api/users/login",
+                                  "https://blue-cursor-backend-production.up.railway.app//api/users/login",
                                   {
                                     method: "POST",
                                     headers: {
@@ -55002,7 +55002,7 @@
                           return (
                             (A.next = 2),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/systemInfo/logos",
+                              "https://blue-cursor-backend-production.up.railway.app//api/systemInfo/logos",
                               {
                                 headers: {
                                   "ngrok-skip-browser-warning": "69420",
@@ -71851,63 +71851,63 @@
           "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
           h.parent_dept
             ? ((e =
-                "https://4859-84-46-253-59.ngrok-free.app/api/sectorVehicles/all/parent/".concat(
+                "https://blue-cursor-backend-production.up.railway.app//api/sectorVehicles/all/parent/".concat(
                   h.department_id
                 )),
               (t =
-                "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/countAll/parent/".concat(
+                "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/countAll/parent/".concat(
                   h.department_id
                 )),
               (n =
-                "https://4859-84-46-253-59.ngrok-free.app/api/specializedDepts/".concat(
+                "https://blue-cursor-backend-production.up.railway.app//api/specializedDepts/".concat(
                   h.department_id
                 )),
               (r =
-                "https://4859-84-46-253-59.ngrok-free.app/api/sectorVehicles/sum/parent/".concat(
+                "https://blue-cursor-backend-production.up.railway.app//api/sectorVehicles/sum/parent/".concat(
                   h.department_id
                 )),
               (a =
-                "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/vehiclesState/parent/".concat(
+                "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/vehiclesState/parent/".concat(
                   h.department_id
                 )),
               (o =
-                "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/vehiclesGPS/parent/".concat(
+                "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/vehiclesGPS/parent/".concat(
                   h.department_id
                 )),
               (l =
-                "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/VehiclesCount/parent/".concat(
+                "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/VehiclesCount/parent/".concat(
                   h.department_id
                 )))
             : ((e =
-                "https://4859-84-46-253-59.ngrok-free.app/api/sectorVehicles/all/".concat(
+                "https://blue-cursor-backend-production.up.railway.app//api/sectorVehicles/all/".concat(
                   h.department_id
                 )),
               (t =
-                "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/countAll/".concat(
+                "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/countAll/".concat(
                   h.department_id
                 )),
               (n =
-                "https://4859-84-46-253-59.ngrok-free.app/api/specializedDepts/".concat(
+                "https://blue-cursor-backend-production.up.railway.app//api/specializedDepts/".concat(
                   h.department_id
                 )),
               (r =
-                "https://4859-84-46-253-59.ngrok-free.app/api/sectorVehicles/sum/".concat(
+                "https://blue-cursor-backend-production.up.railway.app//api/sectorVehicles/sum/".concat(
                   h.department_id
                 )),
               (a =
-                "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/vehiclesState/".concat(
+                "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/vehiclesState/".concat(
                   h.department_id
                 )),
               (o =
-                "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/vehiclesGPS/".concat(
+                "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/vehiclesGPS/".concat(
                   h.department_id
                 )),
               (l =
-                "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/VehiclesCount/".concat(
+                "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/VehiclesCount/".concat(
                   h.department_id
                 )));
           var d = WA(
-              "https://4859-84-46-253-59.ngrok-free.app/api/sectors/".concat(
+              "https://blue-cursor-backend-production.up.railway.app//api/sectors/".concat(
                 h.department_id
               )
             ),
@@ -71925,7 +71925,7 @@
             Y =
               (C.error,
               WA(
-                "https://4859-84-46-253-59.ngrok-free.app/api/specializedDeptVehicles/sum/parent/".concat(
+                "https://blue-cursor-backend-production.up.railway.app//api/specializedDeptVehicles/sum/parent/".concat(
                   h.department_id
                 )
               )),
@@ -75024,7 +75024,7 @@
                       (0, CA.jsx)("img", {
                         className: "rounded-lg",
                         alt: "",
-                        src: "https://4859-84-46-253-59.ngrok-free.app/uploads/".concat(
+                        src: "https://blue-cursor-backend-production.up.railway.app//uploads/".concat(
                           e.values.front_img
                         ),
                       }),
@@ -75049,7 +75049,7 @@
                       (0, CA.jsx)("img", {
                         className: "rounded-lg",
                         alt: "",
-                        src: "https://4859-84-46-253-59.ngrok-free.app/uploads/".concat(
+                        src: "https://blue-cursor-backend-production.up.railway.app//uploads/".concat(
                           e.values.back_img
                         ),
                       }),
@@ -75074,7 +75074,7 @@
                       (0, CA.jsx)("img", {
                         className: "rounded-lg",
                         alt: "",
-                        src: "https://4859-84-46-253-59.ngrok-free.app/uploads/".concat(
+                        src: "https://blue-cursor-backend-production.up.railway.app//uploads/".concat(
                           e.values.right_img
                         ),
                       }),
@@ -75099,7 +75099,7 @@
                       (0, CA.jsx)("img", {
                         className: "rounded-lg",
                         alt: "",
-                        src: "https://4859-84-46-253-59.ngrok-free.app/uploads/".concat(
+                        src: "https://blue-cursor-backend-production.up.railway.app//uploads/".concat(
                           e.values.left_img
                         ),
                       }),
@@ -75634,10 +75634,10 @@
                                 (e =
                                   "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
                                   l.parent_dept
-                                    ? "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/vehicles/parent/".concat(
+                                    ? "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/vehicles/parent/".concat(
                                         l.department_id
                                       )
-                                    : "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/vehicles/".concat(
+                                    : "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/vehicles/".concat(
                                         l.department_id
                                       )),
                                 (A.next = 5),
@@ -75686,10 +75686,10 @@
                                 (e =
                                   "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
                                   l.parent_dept
-                                    ? "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/parent/".concat(
+                                    ? "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/parent/".concat(
                                         l.department_id
                                       )
-                                    : "https://4859-84-46-253-59.ngrok-free.app/api/DeviceDetails/".concat(
+                                    : "https://blue-cursor-backend-production.up.railway.app//api/DeviceDetails/".concat(
                                         l.department_id
                                       )),
                                 (A.next = 5),
@@ -75974,7 +75974,7 @@
                           return (
                             (A.next = 2),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/systemInfo/logos",
+                              "https://blue-cursor-backend-production.up.railway.app//api/systemInfo/logos",
                               {
                                 headers: {
                                   "ngrok-skip-browser-warning": "69420",
@@ -76208,7 +76208,7 @@
             QA = (0, A.useRef)(null),
             pA = (0, A.useRef)(null),
             EA = WA(
-              "https://4859-84-46-253-59.ngrok-free.app/api/departments/type/2"
+              "https://blue-cursor-backend-production.up.railway.app//api/departments/type/2"
             ),
             bA = EA.data;
           EA.isLoading, EA.error;
@@ -76262,7 +76262,7 @@
                             }),
                             (A.next = 10),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/users/signup",
+                              "https://blue-cursor-backend-production.up.railway.app//api/users/signup",
                               {
                                 method: "POST",
                                 body: JSON.stringify(t),
@@ -76318,7 +76318,7 @@
                           return (
                             (A.next = 2),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/departments/values/"
+                              "https://blue-cursor-backend-production.up.railway.app//api/departments/values/"
                                 .concat("sector" === e ? "3" : "4", "/")
                                 .concat(t),
                               {
@@ -76360,7 +76360,7 @@
                           return (
                             (A.next = 2),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/departments/values/"
+                              "https://blue-cursor-backend-production.up.railway.app//api/departments/values/"
                                 .concat("sector" === e ? "3" : "4", "/")
                                 .concat(k),
                               {
@@ -76520,7 +76520,7 @@
                                               return (
                                                 (e.next = 2),
                                                 fetch(
-                                                  "https://4859-84-46-253-59.ngrok-free.app/api/users/roles/".concat(
+                                                  "https://blue-cursor-backend-production.up.railway.app//api/users/roles/".concat(
                                                     A
                                                   ),
                                                   {
@@ -77400,10 +77400,10 @@
                               (e =
                                 "\u0631\u0626\u0627\u0633\u0629 \u0627\u0644\u0634\u0631\u0637\u0629" ==
                                 F.parent_dept
-                                  ? "https://4859-84-46-253-59.ngrok-free.app/api/users/all/parent/".concat(
+                                  ? "https://blue-cursor-backend-production.up.railway.app//api/users/all/parent/".concat(
                                       F.department_id
                                     )
-                                  : "https://4859-84-46-253-59.ngrok-free.app/api/users/all/".concat(
+                                  : "https://blue-cursor-backend-production.up.railway.app//api/users/all/".concat(
                                       F.department_id
                                     )),
                               (A.next = 3),
@@ -77687,7 +77687,7 @@
                         return (
                           (A.next = 2),
                           fetch(
-                            "https://4859-84-46-253-59.ngrok-free.app/api/departments/values/"
+                            "https://blue-cursor-backend-production.up.railway.app//api/departments/values/"
                               .concat("sector" === e ? "3" : "4", "/")
                               .concat(y),
                             {
@@ -77727,7 +77727,7 @@
               [Q]
             );
           var PA = WA(
-              "https://4859-84-46-253-59.ngrok-free.app/api/departments/type/2"
+              "https://blue-cursor-backend-production.up.railway.app//api/departments/type/2"
             ),
             LA = PA.data,
             TA =
@@ -77751,7 +77751,7 @@
                             (t = i.length > 1 && void 0 !== i[1] && i[1]),
                             (A.next = 3),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/users/roles/".concat(
+                              "https://blue-cursor-backend-production.up.railway.app//api/users/roles/".concat(
                                 e
                               ),
                               {
@@ -77833,7 +77833,7 @@
                                 }),
                             (A.next = 15),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/users/edit",
+                              "https://blue-cursor-backend-production.up.railway.app//api/users/edit",
                               {
                                 method: "PUT",
                                 body: JSON.stringify(a),
@@ -78494,7 +78494,7 @@
                             }),
                             (A.next = 4),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/users/delete/".concat(
+                              "https://blue-cursor-backend-production.up.railway.app//api/users/delete/".concat(
                                 I
                               ),
                               {
@@ -78932,7 +78932,7 @@
                           return (
                             (A.next = 2),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/systemInfo/logos",
+                              "https://blue-cursor-backend-production.up.railway.app//api/systemInfo/logos",
                               {
                                 headers: {
                                   "ngrok-skip-browser-warning": "69420",
@@ -78993,7 +78993,7 @@
                           t.append("token", k.token),
                           (A.next = 14),
                           fetch(
-                            "https://4859-84-46-253-59.ngrok-free.app/api/systemInfo/logos",
+                            "https://blue-cursor-backend-production.up.railway.app//api/systemInfo/logos",
                             {
                               method: "PUT",
                               body: t,
@@ -79567,7 +79567,7 @@
                             return (
                               (A.next = 2),
                               fetch(
-                                "https://4859-84-46-253-59.ngrok-free.app/api/states/",
+                                "https://blue-cursor-backend-production.up.railway.app//api/states/",
                                 {
                                   headers: {
                                     Authorization: "Bearer ".concat(E.token),
@@ -79623,7 +79623,7 @@
                             B(null),
                             (A.next = 9),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/states/",
+                              "https://blue-cursor-backend-production.up.railway.app//api/states/",
                               {
                                 method: "POST",
                                 body: JSON.stringify({ stateName: o, user: E }),
@@ -79695,7 +79695,7 @@
                             B(null),
                             (A.next = 9),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/states/".concat(
+                              "https://blue-cursor-backend-production.up.railway.app//api/states/".concat(
                                 v
                               ),
                               {
@@ -79773,7 +79773,7 @@
                             B(null),
                             (A.next = 9),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/states/" +
+                              "https://blue-cursor-backend-production.up.railway.app//api/states/" +
                                 e,
                               {
                                 method: "DELETE",
@@ -80305,7 +80305,9 @@
             S = (0, i.Z)(R, 2),
             J = S[0],
             j = S[1],
-            P = WA("https://4859-84-46-253-59.ngrok-free.app/api/states/"),
+            P = WA(
+              "https://blue-cursor-backend-production.up.railway.app//api/states/"
+            ),
             L = P.data;
           P.isLoading, P.err;
           (0, A.useEffect)(
@@ -80321,7 +80323,7 @@
                             return (
                               (A.next = 2),
                               fetch(
-                                "https://4859-84-46-253-59.ngrok-free.app/api/sectors/",
+                                "https://blue-cursor-backend-production.up.railway.app//api/sectors/",
                                 {
                                   headers: {
                                     Authorization: "Bearer ".concat(M.token),
@@ -80377,7 +80379,7 @@
                             B(null),
                             (A.next = 9),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/sectors/",
+                              "https://blue-cursor-backend-production.up.railway.app//api/sectors/",
                               {
                                 method: "POST",
                                 body: JSON.stringify({
@@ -80453,7 +80455,7 @@
                             B(null),
                             (A.next = 9),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/sectors/".concat(
+                              "https://blue-cursor-backend-production.up.railway.app//api/sectors/".concat(
                                 N
                               ),
                               {
@@ -80536,7 +80538,7 @@
                             B(null),
                             (A.next = 9),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/sectors/" +
+                              "https://blue-cursor-backend-production.up.railway.app//api/sectors/" +
                                 e,
                               {
                                 method: "DELETE",
@@ -81153,7 +81155,9 @@
             S = (0, i.Z)(R, 2),
             J = S[0],
             j = S[1],
-            P = WA("https://4859-84-46-253-59.ngrok-free.app/api/states/"),
+            P = WA(
+              "https://blue-cursor-backend-production.up.railway.app//api/states/"
+            ),
             L = P.data;
           P.isLoading, P.err;
           (0, A.useEffect)(
@@ -81169,7 +81173,7 @@
                             return (
                               (A.next = 2),
                               fetch(
-                                "https://4859-84-46-253-59.ngrok-free.app/api/specializedDepts/",
+                                "https://blue-cursor-backend-production.up.railway.app//api/specializedDepts/",
                                 {
                                   headers: {
                                     Authorization: "Bearer ".concat(M.token),
@@ -81231,7 +81235,7 @@
                             B(null),
                             (A.next = 9),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/specializedDepts/",
+                              "https://blue-cursor-backend-production.up.railway.app//api/specializedDepts/",
                               {
                                 method: "POST",
                                 body: JSON.stringify({
@@ -81307,7 +81311,7 @@
                             B(null),
                             (A.next = 9),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/specializedDepts/".concat(
+                              "https://blue-cursor-backend-production.up.railway.app//api/specializedDepts/".concat(
                                 N
                               ),
                               {
@@ -81390,7 +81394,7 @@
                             B(null),
                             (A.next = 9),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/specializedDepts/" +
+                              "https://blue-cursor-backend-production.up.railway.app//api/specializedDepts/" +
                                 e,
                               {
                                 method: "DELETE",
@@ -81842,7 +81846,7 @@
             Q = (0, i.Z)(m, 2),
             p = (Q[0], Q[1], HA().user),
             E = WA(
-              "https://4859-84-46-253-59.ngrok-free.app/api/users/".concat(
+              "https://blue-cursor-backend-production.up.railway.app//api/users/".concat(
                 p.user_id
               )
             ),
@@ -82077,7 +82081,7 @@
                             return (
                               (A.next = 2),
                               fetch(
-                                "https://4859-84-46-253-59.ngrok-free.app/api/users/".concat(
+                                "https://blue-cursor-backend-production.up.railway.app//api/users/".concat(
                                   MA.user_id
                                 ),
                                 {
@@ -82139,7 +82143,7 @@
                         return (
                           (A.next = 2),
                           fetch(
-                            "https://4859-84-46-253-59.ngrok-free.app/api/departments/values/"
+                            "https://blue-cursor-backend-production.up.railway.app//api/departments/values/"
                               .concat("sector" === e ? "3" : "4", "/")
                               .concat(y),
                             {
@@ -82179,7 +82183,7 @@
               [Q]
             );
           var IA = WA(
-              "https://4859-84-46-253-59.ngrok-free.app/api/departments/type/2"
+              "https://blue-cursor-backend-production.up.railway.app//api/departments/type/2"
             ),
             GA = IA.data,
             UA =
@@ -82201,7 +82205,7 @@
                             x(""),
                             (A.next = 4),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/users/roles/".concat(
+                              "https://blue-cursor-backend-production.up.railway.app//api/users/roles/".concat(
                                 e
                               ),
                               {
@@ -82281,7 +82285,7 @@
                                 }),
                             (A.next = 15),
                             fetch(
-                              "https://4859-84-46-253-59.ngrok-free.app/api/users/edit",
+                              "https://blue-cursor-backend-production.up.railway.app//api/users/edit",
                               {
                                 method: "PUT",
                                 body: JSON.stringify(a),
